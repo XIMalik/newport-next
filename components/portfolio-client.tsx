@@ -33,7 +33,7 @@ export function PortfolioClient() {
     setActivePage(page);
   };
 
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   const ActiveComponent = pageComponents[activePage];
 
@@ -68,6 +68,7 @@ export function PortfolioClient() {
           onNavigate={(p) => handleNavigate(p as Page)}
           theme={theme}
           toggleTheme={toggleTheme}
+          onProfileClick={() => setProfileModalOpen(true)}
         />
       </div>
 
@@ -89,7 +90,7 @@ export function PortfolioClient() {
 
       <Dialog open={profileModalOpen} onOpenChange={setProfileModalOpen}>
         <DialogPortal>
-          <DialogOverlay className="backdrop-blur-sm" />
+          <DialogOverlay className="backdrop-blur-sm" onClick={() => setProfileModalOpen(false)} />
           <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-background border border-border p-8 max-w-sm w-[90vw] h-[500px]">
             <div className="flex flex-col h-full items-center justify-between">
               <div className="flex flex-col items-center text-center flex-1 justify-center">

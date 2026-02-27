@@ -9,13 +9,14 @@ interface NavigationProps {
   onNavigate: (page: string) => void;
   theme: string | undefined;
   toggleTheme: () => void;
+  onProfileClick: () => void;
 }
 
-export function Navigation({ pages, activePage, onNavigate, theme, toggleTheme }: NavigationProps) {
+export function Navigation({ pages, activePage, onNavigate, theme, toggleTheme, onProfileClick }: NavigationProps) {
   return (
     <nav className="h-screen w-64 border-r border-border bg-background flex flex-col px-12 py-10">
       <div className="flex items-center gap-3 mb-14">
-        <Avatar className="h-11 w-11 border border-border">
+        <Avatar className="h-11 w-11 border border-border cursor-pointer" onClick={onProfileClick}>
           <AvatarImage src="/portrait.PNG" alt="Profile" />
           <AvatarFallback className="font-display text-sm">MA</AvatarFallback>
         </Avatar>
