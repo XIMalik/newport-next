@@ -31,7 +31,7 @@ const ProjectTile = ({
     <span className="block text-xs uppercase tracking-widest text-muted-foreground mb-2 font-body">
       {project.type}
     </span>
-    <span className="block font-display text-base font-medium leading-snug">
+    <span className="block font-display text-base uppercase font-medium leading-snug">
       {project.projectTitle}
     </span>
   </button>
@@ -68,7 +68,7 @@ const ProjectPreview = ({ project, onImageClick }: { project: HygraphProject; on
 
     <div className="flex-shrink-0 px-6 md:px-10 pb-6 md:pb-10">
       <div className="flex items-baseline justify-between gap-4 mb-3">
-        <h2 className="font-display text-2xl font-medium">{project.projectTitle}</h2>
+        <h2 className="font-display text-2xl font-medium uppercase">{project.projectTitle}</h2>
         <span className="text-xs uppercase tracking-widest text-primary font-body whitespace-nowrap">
           {project.type}
         </span>

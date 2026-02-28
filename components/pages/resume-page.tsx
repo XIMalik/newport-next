@@ -28,22 +28,13 @@ export function ResumePage() {
           <h1 className="section-title mb-12">About Me</h1>
           <div className="space-y-5">
             <p className="font-body text-base text-muted-foreground leading-relaxed">
-              I&apos;m a software developer driven by the thrill of turning ideas into
-              reality. Whether it&apos;s a rough sketch on a napkin or a fully fleshed-out
-              product vision, I love the process of building — taking something abstract
-              and crafting it into software that people actually use and enjoy.
+              I&apos;m a fullstack software developer, and I do my best to turn ideas into
+              digital products. I always aim to blend clean design with solid engineering to create web applications that exceed user expectations.
             </p>
             <p className="font-body text-base text-muted-foreground leading-relaxed">
-              Over the years, I&apos;ve worked across the full stack, helping startups and
-              teams bring their concepts to life. From architecting scalable backends to
-              polishing pixel-perfect interfaces, I focus on writing clean, maintainable
-              code that stands the test of time.
-            </p>
-            <p className="font-body text-base text-muted-foreground leading-relaxed">
-              I believe great software is built at the intersection of technical
-              excellence and genuine empathy for the end user. I&apos;m not just writing
-              code — I&apos;m helping realize ideas, solve real problems, and create
-              experiences that matter.
+              Over the years, I&apos;ve worked across the full stack, helping meet user needs and wants. From logic to
+              interfaces, I focus on writing clean, maintainable
+              code that stands the test of time, and performs to impress.
             </p>
           </div>
         </section>
