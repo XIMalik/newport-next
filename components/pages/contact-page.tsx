@@ -34,7 +34,7 @@ export function ContactPage() {
   return (
     <div className="h-full overflow-y-auto p-8 lg:p-10 pb-24 lg:pb-10">
       <div className="max-w-2xl">
-        <h1 className="section-title mb-6">Let's talk</h1>
+        <h1 className="section-title mb-6">Let&apos;s talk</h1>
         <p className="font-body text-base text-muted-foreground leading-relaxed mb-12">
           I&apos;m always open to discussing new projects, opportunities, or
           collaborations. Feel free to reach out through any of the channels
