@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     title: "Malik Awesu — Software Developer",
     description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
     type: "website",
-    images: ["/favicon.ico"],
+    images: ["https://malikawesu.com.ng/portrait.PNG"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Malik Awesu — Software Developer",
     description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
-    images: ["/favicon.ico"],
+    images: ["https://malikawesu.com.ng/portrait.PNG"],
   },
 };
 
