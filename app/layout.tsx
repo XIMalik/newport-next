@@ -17,18 +17,20 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: "Malik Awesu — Software Developer",
-  description: "I build scalable web applications with clean architecture and thoughtful user experiences, blending performance with elegant design.",
-  keywords: ["software developer", "fullstack developer", "web development", "React", "Next.js", "TypeScript"],
+  description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
+  keywords: ["software developer", "fullstack developer", "web development", "React", "Next.js", "TypeScript", "Lagos", "Nigeria"],
   authors: [{ name: "Malik Awesu" }],
   openGraph: {
     title: "Malik Awesu — Software Developer",
-    description: "I build scalable web applications with clean architecture and thoughtful user experiences.",
+    description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
     type: "website",
+    images: ["/favicon.ico"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Malik Awesu — Software Developer",
-    description: "I build scalable web applications with clean architecture and thoughtful user experiences.",
+    description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
+    images: ["/favicon.ico"],
   },
 };
 
