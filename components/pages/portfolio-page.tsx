@@ -119,8 +119,12 @@ export function PortfolioPage() {
 
   return (
     <div className="h-full flex flex-col lg:flex-row">
-      <div className="w-full lg:w-[380px] xl:w-[420px] flex-shrink-0 p-8 lg:p-10 lg:border-r border-border overflow-y-auto">
+      <div className="w-full lg:w-[380px] xl:w-[420px] flex-shrink-0 p-8 lg:p-10 lg:border-r border-border overflow-y-auto pb-24 lg:pb-10">
         <h1 className="section-title mb-6">Portfolio</h1>
+        
+        <p className="font-body text-sm text-muted-foreground leading-relaxed mb-8">
+          A collection of projects showcasing my work across frontend, backend, and fullstack development.
+        </p>
 
         <div className="flex flex-wrap gap-2 mb-8">
           {FILTERS.map((f) => (
@@ -169,7 +173,7 @@ export function PortfolioPage() {
         )}
       </div>
 
-      <div className="hidden lg:flex flex-1 flex-col overflow-y-auto">
+      <div className="hidden lg:flex flex-1 flex-col overflow-y-auto pb-24 lg:pb-0">
         <AnimatePresence mode="wait">
           {selectedProject ? (
             <ProjectPreview project={selectedProject} onImageClick={() => setImageModalOpen(true)} />

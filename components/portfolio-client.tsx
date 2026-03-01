@@ -55,7 +55,7 @@ export function PortfolioClient() {
             ))}
           </div>
           <Avatar className="h-10 w-10 border border-border cursor-pointer flex-shrink-0" onClick={() => setProfileModalOpen(true)}>
-            <AvatarImage src="/portrait.PNG" alt="Profile" />
+            <AvatarImage src="/portrait.png" alt="Profile" />
             <AvatarFallback className="font-display text-sm">MA</AvatarFallback>
           </Avatar>
         </div>
@@ -72,7 +72,7 @@ export function PortfolioClient() {
         />
       </div>
 
-      <div className="flex-1 h-screen overflow-hidden relative mt-14 lg:mt-0">
+      <div className="flex-1 h-screen overflow-hidden relative mt-14 lg:mt-0 mb-14 lg:mb-0">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={activePage}
@@ -81,12 +81,22 @@ export function PortfolioClient() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: direction > 0 ? "-50%" : "50%", opacity: 0 }}
             transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
-            className="absolute inset-0 overflow-y-auto"
+            className="absolute inset-0 overflow-y-auto pb-14 lg:pb-0"
           >
             <ActiveComponent />
           </motion.div>
         </AnimatePresence>
       </div>
+
+      <footer className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-background border-t border-border">
+        <div className="flex items-center gap-2 px-6 py-3">
+          <Avatar className="h-6 w-6 border border-border">
+            <AvatarImage src="/portrait.png" alt="Logo" />x
+            <AvatarFallback className="font-display text-xs">MA</AvatarFallback>
+          </Avatar>
+          <span className="font-display text-xs text-muted-foreground">Malik Awesu</span>
+        </div>
+      </footer>
 
       <Dialog open={profileModalOpen} onOpenChange={setProfileModalOpen}>
         <DialogPortal>
@@ -95,7 +105,7 @@ export function PortfolioClient() {
             <div className="flex flex-col h-full items-center justify-between">
               <div className="flex flex-col items-center text-center flex-1 justify-center">
                 <Avatar className="h-24 w-24 border border-border mb-4">
-                  <AvatarImage src="/portrait.PNG" alt="Profile" />
+                  <AvatarImage src="/portrait.png" alt="Profile" />
                   <AvatarFallback className="font-display text-2xl">MA</AvatarFallback>
                 </Avatar>
                 <h2 className="font-display text-2xl font-medium mb-1">Malik Awesu</h2>
@@ -106,8 +116,8 @@ export function PortfolioClient() {
               </div>
               <div className="w-full text-center">
                 <div className="space-y-2 mb-6">
-                  <p className="font-body text-sm">abdulmalikawesu@gmail.com</p>
-                  <p className="font-body text-sm">+2347071163065</p>
+                  <a href="mailto:abdulmalikawesu@gmail.com" className="font-body text-sm hover:text-primary transition-colors block">abdulmalikawesu@gmail.com</a>
+                  <a href="tel:+2347071163065" className="font-body text-sm hover:text-primary transition-colors block">+2347071163065</a>
                 </div>
                 <div className="flex gap-3 w-full">
                   <button
@@ -120,14 +130,14 @@ export function PortfolioClient() {
                         alert("Link copied to clipboard!");
                       }
                     }}
-                    className="flex-1 border border-border text-foreground font-display text-xs uppercase tracking-widest py-2 flex items-center justify-center gap-2 hover:bg-accent transition-colors"
+                    className="flex-1  bg-destructive  text-destructive-foreground font-display text-xs uppercase tracking-widest py-2 flex items-center justify-center gap-2 transition-colors"
                   >
                     <Share2 className="h-3.5 w-3.5" />
                     Share
                   </button>
                   <button
                     onClick={() => setProfileModalOpen(false)}
-                    className="flex-1 bg-destructive text-destructive-foreground font-display text-xs uppercase tracking-widest py-2"
+                    className="flex-1 border border-border text-foreground font-display text-xs uppercase tracking-widest py-2"
                   >
                     Close
                   </button>

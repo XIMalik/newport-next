@@ -16,21 +16,57 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Malik Awesu — Software Developer",
-  description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
-  keywords: ["software developer", "fullstack developer", "web development", "React", "Next.js", "TypeScript", "Lagos", "Nigeria"],
-  authors: [{ name: "Malik Awesu" }],
-  openGraph: {
-    title: "Malik Awesu — Software Developer",
-    description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
-    type: "website",
-    images: ["https://malikawesu.com.ng/portrait.PNG"],
+  metadataBase: new URL("https://malikawesu.com.ng"),
+
+  title: {
+    default: "Malik Awesu | Fullstack Developer",
+    template: "%s | Malik Awesu",
   },
+
+  description:
+    "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
+
+  keywords: [
+    "software developer",
+    "fullstack developer",
+    "web development",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Lagos",
+    "Nigeria",
+  ],
+
+  authors: [{ name: "Malik Awesu" }],
+
+  openGraph: {
+    title: "Malik Awesu | Fullstack Developer",
+    description:
+      "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
+    url: "https://malikawesu.com.ng",
+    siteName: "Malik Awesu",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/m.jpg", // uses metadataBase
+        width: 1200,
+        height: 630,
+        alt: "Malik Awesu Portfolio Preview",
+      },
+    ],
+  },
+
   twitter: {
     card: "summary_large_image",
-    title: "Malik Awesu — Software Developer",
-    description: "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
-    images: ["https://malikawesu.com.ng/portrait.PNG"],
+    title: "Malik Awesu | Fullstack Developer",
+    description:
+      "Building with clean architecture and thoughtful user experiences, blending performance with elegant design.",
+    images: ["/m.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 

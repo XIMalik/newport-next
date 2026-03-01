@@ -87,7 +87,10 @@
     font-family: var(--font-display);
   }
 
-  .nav-link:hover,
+  .nav-link:hover {
+    color: hsl(var(--primary));
+  }
+
   .nav-link-active {
     color: hsl(var(--primary));
   }
@@ -119,12 +122,13 @@
   }
 
   .download-btn {
-    @apply inline-flex items-center gap-2 px-6 py-3 text-sm tracking-widest uppercase border border-primary text-primary transition-colors duration-300;
+    @apply inline-flex px-4 py-4 items-center gap-2 text-xs tracking-widest uppercase border border-primary text-primary transition-colors duration-300;
     font-family: var(--font-body);
+    /* padding: 0.5rem; */
   }
 
-  .download-btn:hover {
-    @apply bg-primary text-primary-foreground;
+  .dark .download-btn {
+    @apply bg-destructive text-destructive-foreground border-destructive;
   }
 
   .icon-link {

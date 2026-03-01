@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, Server, Cloud } from "lucide-react";
+import { Code2, Server, Cloud, Download } from "lucide-react";
 
 const stackCategories = [
   {
@@ -22,7 +22,7 @@ const stackCategories = [
 
 export function ResumePage() {
   return (
-    <div className="h-full overflow-y-auto p-8 lg:p-10">
+    <div className="h-full overflow-y-auto p-8 lg:p-10 pb-24 lg:pb-10">
       <div className="max-w-2xl">
         <section className="mb-14">
           <h1 className="section-title mb-12">About Me</h1>
@@ -67,6 +67,21 @@ export function ResumePage() {
               </div>
             ))}
           </div>
+        </section>
+        <section>
+          <div className="border-t border-border pt-8">
+                    <p className="font-body text-base text-muted-foreground leading-relaxed mb-4">
+For a closer look at my experience and the technical tools I’ve worked with, feel free to download my resume.
+                    </p>
+                    <a
+                      href="/AbdulmalikAwesu.pdf"
+                      download
+                      className="download-btn inline-flex"
+                    >
+                      <Download className="h-4 w-4" />
+                      Download Resume
+                    </a>
+                  </div>
         </section>
       </div>
     </div>
