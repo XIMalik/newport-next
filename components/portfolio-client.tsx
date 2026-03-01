@@ -88,16 +88,6 @@ export function PortfolioClient() {
         </AnimatePresence>
       </div>
 
-      <footer className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-background border-t border-border">
-        <div className="flex items-center gap-2 px-6 py-3">
-          <Avatar className="h-6 w-6 border border-border">
-            <AvatarImage src="/portrait.png" alt="Logo" />x
-            <AvatarFallback className="font-display text-xs">MA</AvatarFallback>
-          </Avatar>
-          <span className="font-display text-xs text-muted-foreground">Malik Awesu</span>
-        </div>
-      </footer>
-
       <Dialog open={profileModalOpen} onOpenChange={setProfileModalOpen}>
         <DialogPortal>
           <DialogOverlay className="backdrop-blur-sm" onClick={() => setProfileModalOpen(false)} />
