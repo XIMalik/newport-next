@@ -30,14 +30,21 @@ export const metadata: Metadata = {
     "software developer",
     "fullstack developer",
     "web development",
+    "python",
+    "django",
     "React",
     "Next.js",
     "TypeScript",
     "Lagos",
     "Nigeria",
+    "abdulmalik", 
+    "awesu",
+    "abdulmalik awesu",
+    "malik awesu",
+    "malik"
   ],
 
-  authors: [{ name: "Malik Awesu" }],
+  authors: [{ name: "Abdulmalik Awesu" }],
 
   openGraph: {
     title: "Malik Awesu | Fullstack Developer",
